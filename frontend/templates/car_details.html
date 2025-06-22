@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ car['name'] }}</h2>
+<p>{{ car['description'] }}</p>
+<img src="{{ url_for('static', filename=car['image_path']) }}" alt="{{ car['name'] }}">
+<model-viewer 
+    src="{{ url_for('static', filename=car['model_path']) }}"
+    alt="3D model of {{ car['name'] }}" 
+    auto-rotate 
+    camera-controls 
+    style="width: 600px; height: 400px;">
+</model-viewer>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Add a New Car</h2>
+<form method="POST">
+    <label>Model Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Brand:</label><br>
+    <input type="text" name="brand" required><br><br>
+
+    <label>Body Type:</label><br>
+    <input type="text" name="body_type"><br><br>
+
+    <label>Engine:</label><br>
+    <input type="text" name="engine"><br><br>
+
+    <label>Price:</label><br>
+    <input type="number" name="price"><br><br>
+
+    <label>Image Path (relative to /static):</label><br>
+    <input type="text" name="image_path"><br><br>
+
+    <label>3D Model Path (.glb, relative to /static):</label><br>
+    <input type="text" name="model_path"><br><br>
+
+    <label>Description:</label><br>
+    <textarea name="description"></textarea><br><br>
+
+    <button type="submit">Add Car</button>
+</form>
+{% endblock %}

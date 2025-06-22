@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Matching Cars</h2>
+<ul>
+{% for car in cars %}
+    <li>
+        <a href="{{ url_for('car_detail', car_id=car['id']) }}">{{ car['name'] }}</a>
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}

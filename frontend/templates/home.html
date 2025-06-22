@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Find Your Car</h1>
+<form action="/category" method="get">
+    <label for="brand">Brand:</label>
+    <select name="brand" id="brand">
+        <option value="">-- Any --</option>
+        {% for brand in brands %}
+            <option value="{{ brand['brand'] }}">{{ brand['brand'] }}</option>
+        {% endfor %}
+    </select>
+
+    <label for="model">Model:</label>
+    <select name="model" id="model">
+        <option value="">-- Any --</option>
+        {% for model in models %}
+            <option value="{{ model['name'] }}">{{ model['name'] }}</option>
+        {% endfor %}
+    </select>
+
+    <button type="submit">Search</button>
+</form>
+{% endblock %}
