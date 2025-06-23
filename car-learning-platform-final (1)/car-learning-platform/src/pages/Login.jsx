@@ -30,7 +30,7 @@ export default function Login() {
         className="bg-white p-8 rounded-xl shadow-md w-full max-w-md"
       >
         <h2 className="text-3xl font-bold mb-6 text-center text-gray-800">
-          Login to <span className="text-blue-600">Car Learn</span>
+          Login to <span className="text-blue-600">Vroom Vroom</span>
         </h2>
 
         {/* Email */}
