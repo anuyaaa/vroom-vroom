@@ -8,7 +8,7 @@ export default function App() {
   return (
     <Router>
       <nav className="bg-gray-900 text-white p-4 flex justify-between">
-        <div className="text-xl font-bold">CarLearn</div>
+        <div className="text-xl font-bold">Vroom Vroom</div>
         <div className="space-x-4">
           <Link to="/" className="hover:text-blue-400">Home</Link>
           <Link to="/explore" className="hover:text-blue-400">Explore</Link>

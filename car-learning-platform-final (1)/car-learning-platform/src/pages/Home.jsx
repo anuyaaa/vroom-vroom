@@ -11,11 +11,14 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-black bg-opacity-60" />
         <div className="relative z-10 text-center p-10">
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 animate-pulse">
-            Welcome to Car Learn 🚗
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-pulse">
+            Welcome to Vroom Vroom
           </h1>
           <p className="text-xl text-gray-300 mb-6">
-            Your journey from car enthusiast to automotive expert starts here.
+            Ever heard "inline-4" and nodded like you knew? Yea same.
+  <br />
+  Let's fix that. One car at a time.
+            
           </p>
           <Link
             to="/explore"
@@ -28,16 +31,16 @@ export default function Home() {
 
       {/* Learning Levels Section */}
       <div className="p-10 text-center">
-        <h2 className="text-3xl font-bold mb-6">Choose Your Learning Level</h2>
+        <h2 className="text-3xl font-bold mb-6">Which gear are you in?</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
               level: "Basic",
-              desc: "Get introduced to car specs, body types, and basic terms.",
+              desc: "The basic 5 things of a car you might want to know.",
             },
             {
               level: "Intermediate",
-              desc: "Understand performance metrics, acceleration, and transmission.",
+              desc: "Understand performance metrics, acceleration, transmission and finally about the 'inline-4'.",
             },
             {
               level: "Expert",
